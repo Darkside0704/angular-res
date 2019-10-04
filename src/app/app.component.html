@@ -1,6 +1,19 @@
 <hello name="{{ name }}"></hello>
 <input [(ngModel)]="myModel" type="text">
 <div> {{myModel}} </div>
+<ul>
+  <li *ngFor="let angka of arrayAngka"> {{angka}} </li>
+</ul>
+
+angka 1 :<input [(ngModel)]="x" type="text"><br/>
+angka 2 :<input [(ngModel)]="y" type="text"><br/>
+<button (click)="add()">tambah</button>
+<button (click)="min()">kurang</button>
+<button (click)="mul()">kali</button>
+<button (click)="bag()">bagi</button>
+<br>
+<!--hasil : <span>{{(x*1)+(y*1)}}</span>!-->
+hasil = {{temp}} 
 <p>
   Cece asdos terbaik :) 
 </p>
